@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-website-third-iteration",
+  "version": "1.0.0",
+  "description": "The third iteration for my front-end developer portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "my-front-end-portfolio"
+  },
+  "author": "Jaskiran Chhokar",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.0"
+  }
+}

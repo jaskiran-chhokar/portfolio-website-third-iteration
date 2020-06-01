@@ -1,0 +1,195 @@
+@font-face {
+    font-family: CalibreLight; 
+    /*     src: url('../calibre-font/CalibreMedium.woff');     */ 
+    /* src: url('../calibre-font/CalibreLight.woff');  */
+    src: url('../calibre-font/CalibreThin.woff')
+}
+
+@font-face {
+    font-family: CalibreBold; 
+    src: url('../calibre-font/CalibreMedium.woff');
+}
+
+body {
+    margin: 0;
+    background-color: #f7efee;
+}
+
+.main-button {
+    text-decoration: none;
+    font-family: CalibreBold;
+    color: #0c214a;
+    border: 2px solid #0c214a;
+    padding: 1rem 1.5rem 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.main-button::before {
+    position: absolute;
+    top: -15%;
+    left: -5%;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(208,168,179,0.4);
+    z-index: -1;
+    content: '';
+}
+
+.navbar {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 4rem;
+}
+
+.navbar__line {
+    padding: 1.5rem 1.2rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.navbar .navbar--line__one, .navbar--line__three {
+    width: 35px; 
+    height: 4px;
+    background-color: #0c214a;
+    margin-bottom: 0.4rem;
+}
+
+.navbar .navbar--line__two {
+    width: 50px; 
+    height: 4px;
+    background-color: #0c214a;
+    margin-bottom: 0.4rem;
+}
+
+p {
+    font-family: CalibreLight;
+    color: #0c214a;
+    font-size: 1.4rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.main-header {
+    height: 80vh;
+}
+
+.main-header .container  {
+    padding: 6rem 4rem;
+    position: relative;
+}
+
+.column-seven--lg {
+    flex: 0 0 70%;
+    max-width: 70%; 
+}
+
+.column-six--lg {
+    flex: 0 0 50%;
+    max-width: 50%; 
+}
+
+.main-heading {
+    font-family: CalibreBold;
+    font-size: 5.5rem;
+    font-weight: bolder;
+    color: #0c214a;
+    margin: 1rem 0;
+    line-height: 0.5;
+}
+
+.secondary-heading {
+    font-family: CalibreBold;
+    color: #0c214a;
+    font-size: 3.5rem;    
+    margin-bottom: 0.5rem;
+}
+
+.secondary-para {
+    margin: 0; 
+}
+
+.main-heading-two {
+    color: rgba(208,168,179,0.6);
+}
+
+.main-subheading {
+    font-family: CalibreLight;
+    color: #0c214a;
+    font-size: 1.8rem;
+    margin: 0 0 2.4rem 0;
+    padding: 1rem 0;
+    width: 70%;
+}
+
+.main-header .main--line {
+    position: relative;
+    left: 25%; 
+    width: 20px;
+}
+
+.main-header .main--icons {
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.main-header .main--icons i {
+    padding-bottom: 2.5rem;
+    color: #0c214a;
+}
+
+.main-header .main--verticle-line {
+    position: relative;
+    z-index: -1;
+    height: 120px;
+    width: 2px; 
+    background-color: #0c214a;
+    margin: 0 auto;
+}
+
+.main-header .main--verticle-line:after {
+    content: '';
+    background-color: rgba(208,168,179,0.6);
+    width: 2px;
+    height: 120px;
+    position: absolute;
+    left: -500%;
+    top: 50%;
+    z-index: 10;
+}
+
+.about {
+    background-color: white; 
+    border-top: 12px solid rgba(208,168,179,0.4);
+    transform: skewY(-2deg);
+    margin-bottom: 5rem;
+}
+
+.about-box {
+    position: relative;
+    transform: skewY(2deg);
+    height: auto;
+    padding: 8rem 4rem;
+}
+
+
+/* .about-box:before {
+    content: '';
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    z-index: -1; 
+    top: -13%;
+    left: -6%; 
+    background-color: rgba(208,168,179,0.1);
+    border-radius: 5px; 
+
+} */
