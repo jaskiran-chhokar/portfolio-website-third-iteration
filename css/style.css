@@ -17,7 +17,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: CalibreBold;  
-    color: #0c214a;  
 }
 
 .main-button {
@@ -42,6 +41,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(208,168,179,0.4);
     z-index: -1;
     content: '';
+    transition: 0.3s ease-in-out;
+}
+
+.main-button:hover::before{
+    top: 0;
+    left: 0;
 }
 
 .navbar {
@@ -184,10 +189,10 @@ p {
 }
 
 .featured-work {
-    background-color: white; 
-    border-top: 12px solid rgba(208,168,179,0.4);
+    background-color: white;
+    border-top: 12px solid rgba(208,168,179,1);
     transform: skewY(-2deg);
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .featured-work .container {
@@ -217,21 +222,136 @@ p {
     position: relative;
     height: auto;
 }
- 
-.featured-work .featured-work--projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .featured-work .featured-work--project {
-    flex: 0 0 30%;
-    max-width: 30%; 
+    padding: 0 0.5rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
-.featured-work .featured-work--project div {
-    background-color: rgba(208,168,179,0.5);
+.featured-work .featured-work--img {
+
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
     border-radius: 5px; 
-    height: 250px; 
-    margin: 1rem 1rem 1rem 0;
+
+    flex: 0 0 52%;
+    max-width: 52%; 
+    width: 100%; 
+    height: 400px; 
+
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
+
+.featured-work .featured-work--img:before {
+    content: ''; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(208,168,179,0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.featured-work--project .featured-work--info {
+    flex: 0 0 40%;
+    max-width: 40%;  
+    position: relative;
+}
+
+.featured-work--project .featured-work--info .featured-work--info-box {
+    padding: 3rem 2.8rem;
+    background-color: #f7efee;
+    position: absolute;
+    width: 105%;
+    top: 35%;
+    left: -20%;
+}
+
+.featured-work--project .featured-work--info .featured-work--info-box:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 2px solid #0c214a;
+    position: absolute;
+    top: -11%;
+    right: -4.5%;
+    z-index: -1;
+}
+
+.featured-work--project .featured-work--info .featured-work--info-boxalt {
+    padding: 3rem 2.8rem;
+    background-color: #f7efee;
+    position: absolute;
+    width: 105%;
+    top: 35%;
+    left: 0;
+}
+
+.featured-work--project .featured-work--info .featured-work--info-boxalt:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 2px solid #0c214a;
+    position: absolute;
+    top: -11%;
+    right: 3.5%;
+    z-index: -1;
+}
+
+.featured-work--project .featured-work--info .featured-work--info-box div, 
+.featured-work--project .featured-work--info .featured-work--info-boxalt div {
+    display: flex;
+}
+
+.featured-work--project .featured-work--info .featured-work--tags {
+    font-family: CalibreBold;
+    color: #0c214a;
+    padding: 0.5rem 1rem 0.1rem;
+    margin-right: 0.6rem;
+    border: 2px solid #0c214a;
+    border-radius: 5px;
+}
+
+.featured-work--project .featured-work--title {
+    color: #0c214a;
+    font-size: 1.7rem;
+    margin: 0rem;
+}
+
+.featured-work--project .featured-work--description {
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.featured-work .featured-work--img-one {
+    background-image: url(../public/images/ramanillusions.png);
+}
+
+.featured-work .featured-work--img-two {
+    background-image: url(../public/images/ecommerce-theme.png);
+    z-index: -1;
+}
+
+.featured-work .featured-work--img-three {
+    background-image: url(https://justintimeselfstorage.com/images/just-in-time-storage-store.jpg);
+}
+
+.featured-work .featured-work--img-four {
+    background-image: url(https://images.pexels.com/photos/1822568/pexels-photo-1822568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+.featured-work .featured-work--img-five {
+    background-image: url(../public/images/interactive-form.jpg);
+}
+
+.featured-work .featured-work--img-six {
+    background-image: url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
