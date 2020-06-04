@@ -6,18 +6,19 @@ html
         script(src='https://kit.fontawesome.com/b6a6d306f2.js' crossorigin='anonymous')
     body
         nav(class='navbar')
-            div
-                p Jaskiran />
-            div(class='navbar__line')
-                div(class='navbar--line__one')
-                div(class='navbar--line__two')
-                div(class='navbar--line__three')
+            div(class='navbar--container')
+                div
+                    p(class='logo') Jaskiran />
+                div(class='navbar__line')
+                    div(class='navbar--line__one')
+                    div(class='navbar--line__two')
+                    div(class='navbar--line__three')
 
         header(class='main-header')
             div(class='container')
                 div(class='column-seven--lg')
                     h1(class='main-heading') Jaskiran Chhokar.
-                    h1(class='main-heading main-heading-two') I build & design websites
+                    h2(class='main-heading main-heading-two') I build & design websites
                     p(class='main-subheading') Hi! I'm a Front-end Developer 👩🏻‍💻 based in Toronto, Ontario. I'm passionate about creating user-friendly, well-designed, responsive and accessible web projects.
                     a(class='main-button' href='#contact') Get in Touch
                 div(class='main--line')
@@ -30,7 +31,7 @@ html
 
         section(class='about-me')
             div(class='container')
-                div(class='column-six--lg')
+                div(class='column-sixhalf--lg')
                     div(class='about-me--box')
                         h2(class='secondary-heading') About Me
                         p(class='about-me--para') A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.  repos by number numb.
@@ -118,3 +119,5 @@ html
                         //-     div(class='featured-work--info')
                         //-         h3 Employee Startup Directory
                         //-     div(class='featured-work--img featured-work--img-six')
+    script(src='../../node_modules/gsap/dist/gsap.min.js')
+    script(src='../../public/js/animations.js')

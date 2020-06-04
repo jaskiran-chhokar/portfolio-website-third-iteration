@@ -17,7 +17,6 @@
 
 body {
     margin: 0;
-    background-color: #f7efee;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,7 +59,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-    display: flex; 
+    background-color: #f7efee;
+}
+
+.navbar--container {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.8rem 4rem;
@@ -98,7 +101,7 @@ p {
 }
 
 .main-header {
-    height: 80vh;
+    background-color: #f7efee;
 }
 
 .main-header .container  {
@@ -124,6 +127,11 @@ p {
 .column-six--lg {
     flex: 0 0 60%;
     max-width: 60%;
+}
+
+.column-sixhalf--lg {
+    flex: 0 0 65%;
+    max-width: 65%;
 }
 
 .column-five--lg {
@@ -197,7 +205,7 @@ p {
 
 .main-header .main--verticle-line {
     position: relative;
-    z-index: -1;
+    z-index: 1;
     height: 120px;
     width: 2px; 
     background-color: #0c214a;
@@ -219,6 +227,8 @@ p {
     background-color: white;   
     border-top: 12px solid rgba(208,168,179,1);
     transform: skewY(-2deg);
+    position: relative;
+    top: -25px;
 }
 
 .about-me .secondary-heading {
@@ -232,7 +242,6 @@ p {
 .about-me .about-me--para {
     margin-top: 0; 
     margin-bottom: 2rem;
-    font-size: 1.6rem;
 }
 
 .about-me .about-me--skills {

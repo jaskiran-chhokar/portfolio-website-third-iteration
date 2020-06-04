@@ -13,6 +13,7 @@
   "author": "Jaskiran Chhokar",
   "license": "ISC",
   "dependencies": {
+    "gsap": "^3.3.0",
     "pug": "^3.0.0"
   }
 }
