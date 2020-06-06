@@ -100,7 +100,7 @@ aboutAnimation.fromTo('.about-me--skill', {
 var aboutElement = document.querySelector('.about-me--container');
 var aboutScene = new ScrollMagic.Scene({
   triggerElement: '.about-me--container',
-  triggerHook: 0.8,
+  triggerHook: 0.85,
   duration: aboutElement.offsetHeight
 }).setTween(aboutAnimation).addTo(homeController); // Featured Projects Section
 

@@ -112,7 +112,7 @@ const aboutElement = document.querySelector('.about-me--container');
 
 let aboutScene = new ScrollMagic.Scene({
     triggerElement: '.about-me--container',
-    triggerHook: 0.8, 
+    triggerHook: 0.85, 
     duration: aboutElement.offsetHeight
 })
 .setTween(aboutAnimation)
