@@ -88,6 +88,8 @@ var headerAnimate = function headerAnimate() {
 
 headerAnimate(); // Scroll Animations
 
+var homeController = new ScrollMagic.Controller(); // About Me Section
+
 var aboutAnimation = gsap.timeline();
 aboutAnimation.fromTo('.about-me--skill', {
   opacity: 0
@@ -96,9 +98,18 @@ aboutAnimation.fromTo('.about-me--skill', {
   stagger: 1
 }, "3");
 var aboutElement = document.querySelector('.about-me--container');
-var homeController = new ScrollMagic.Controller();
 var aboutScene = new ScrollMagic.Scene({
   triggerElement: '.about-me--container',
-  triggerHook: 0.6,
+  triggerHook: 0.8,
   duration: aboutElement.offsetHeight
-}).setTween(aboutAnimation).addTo(homeController);
+}).setTween(aboutAnimation).addTo(homeController); // Featured Projects Section
+
+var featuredProjects = document.querySelectorAll('.featured-work--project');
+featuredProjects.forEach(function (project) {
+  new ScrollMagic.Scene({
+    triggerElement: project,
+    offset: 300,
+    triggerHook: 1.5,
+    duration: project.offsetHeight
+  }).setClassToggle(project, 'visible').addIndicators(project).addTo(homeController);
+});

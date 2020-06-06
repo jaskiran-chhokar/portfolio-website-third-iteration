@@ -97,6 +97,9 @@ const headerAnimate = () => {
 headerAnimate();
 
 // Scroll Animations
+let homeController = new ScrollMagic.Controller();
+
+// About Me Section
 let aboutAnimation = gsap.timeline(); 
 aboutAnimation.fromTo('.about-me--skill', {
     opacity: 0
@@ -107,11 +110,24 @@ aboutAnimation.fromTo('.about-me--skill', {
 
 const aboutElement = document.querySelector('.about-me--container'); 
 
-let homeController = new ScrollMagic.Controller();
 let aboutScene = new ScrollMagic.Scene({
     triggerElement: '.about-me--container',
-    triggerHook: 0.6, 
+    triggerHook: 0.8, 
     duration: aboutElement.offsetHeight
 })
 .setTween(aboutAnimation)
 .addTo(homeController);
+
+// Featured Projects Section
+const featuredProjects = document.querySelectorAll('.featured-work--project'); 
+featuredProjects.forEach(project => {
+    new ScrollMagic.Scene({
+        triggerElement: project,
+        offset: 300,
+        triggerHook: 1.5, 
+        duration: project.offsetHeight
+    })
+    .setClassToggle(project, 'visible')
+    .addIndicators(project) 
+    .addTo(homeController)
+})

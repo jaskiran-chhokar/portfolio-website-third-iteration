@@ -58,6 +58,11 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
 .navbar {
     background-color: #f7efee;
 }
@@ -329,13 +334,12 @@ p {
 
 .featured-work {
     background-color: white;
-    margin-bottom: 8rem;
     position: relative;
     top: -50px;
 }
 
 .featured-work .container {
-    padding: 8rem 4rem;
+    padding: 8rem 4rem 0;
     transform: skewY(0deg);
 }
 
@@ -366,6 +370,9 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
+    opacity: 0.2;
+    transition: 0.4s ease-in; 
+    transform: translateY('150px');
 }
 
 .featured-work .featured-work--img {
