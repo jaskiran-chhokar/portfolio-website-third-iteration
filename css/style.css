@@ -259,6 +259,38 @@ p {
     border-radius: 5px;
 }
 
+.about-me .about-me--skill {
+    background-color: transparent;
+    transition: .2s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.about-me .about-me--skill:after {
+    content: ''; 
+    position: absolute;
+    z-index: -1;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(208,168,179,0.3);
+    transition: .35s ease-in;
+    transform-origin: left;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 0;
+}
+
+.about-me .about-me--skill:hover:after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+  
+
 .about-me .about-me--image {
     border-radius: 2%;
     filter: grayscale(40%);

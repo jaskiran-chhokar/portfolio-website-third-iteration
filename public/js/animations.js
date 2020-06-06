@@ -96,4 +96,22 @@ const headerAnimate = () => {
 
 headerAnimate();
 
+// Scroll Animations
+let aboutAnimation = gsap.timeline(); 
+aboutAnimation.fromTo('.about-me--skill', {
+    opacity: 0
+},{
+    opacity: 1,
+    stagger: 1,
+},"3")
 
+const aboutElement = document.querySelector('.about-me--container'); 
+
+let homeController = new ScrollMagic.Controller();
+let aboutScene = new ScrollMagic.Scene({
+    triggerElement: '.about-me--container',
+    triggerHook: 0.6, 
+    duration: aboutElement.offsetHeight
+})
+.setTween(aboutAnimation)
+.addTo(homeController);

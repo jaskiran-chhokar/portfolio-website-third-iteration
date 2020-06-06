@@ -86,4 +86,19 @@ var headerAnimate = function headerAnimate() {
   }, "0");
 };
 
-headerAnimate();
+headerAnimate(); // Scroll Animations
+
+var aboutAnimation = gsap.timeline();
+aboutAnimation.fromTo('.about-me--skill', {
+  opacity: 0
+}, {
+  opacity: 1,
+  stagger: 1
+}, "3");
+var aboutElement = document.querySelector('.about-me--container');
+var homeController = new ScrollMagic.Controller();
+var aboutScene = new ScrollMagic.Scene({
+  triggerElement: '.about-me--container',
+  triggerHook: 0.6,
+  duration: aboutElement.offsetHeight
+}).setTween(aboutAnimation).addTo(homeController);
