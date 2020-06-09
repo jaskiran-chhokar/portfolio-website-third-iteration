@@ -59,7 +59,7 @@ const headerAnimate = () => {
         opacity: 1, 
         ease: Sine.easeIn
     }, "0")
-    .fromTo('.fab', {
+    .fromTo('.main--icon', {
         opacity: 0   
     }, {
         opacity: 1,

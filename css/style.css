@@ -499,3 +499,58 @@ p {
 .featured-work .featured-work--img-six {
     background-image: url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
+
+/* noteworthy proejcts */ 
+.more-projects .container {
+    padding: 0 5rem;
+    flex-wrap: wrap;
+}
+
+.more-projects .column-ten--lg {
+    padding-bottom: 3rem;
+}
+
+.more-projects .more-projects--contain {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.more-projects .more-projects--project {
+    flex: 0 0 25%;
+    max-width: 25%;
+    background-color: #f7efee;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    margin: 0.5rem;
+}
+
+.more-projects .more-projects--icons {
+    display: flex; 
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.more-projects .more-projects--icons i {
+    font-size: 1.2rem;
+    color: #0c214a;
+    margin-left: 0.5rem;
+}
+
+.more-projects .more-projects--project h4 {
+    color: #0c214a;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.more-projects .more-projects--project p {
+    margin: 0.5rem 0 1.5rem 0;
+    font-size: 1.2rem;
+}
+
+.more-projects .more-projects--techologies {
+    /* padding-top: 1.5rem; 
+    border-top: 1px solid rgba(208,168,179,0.6); */
+    font-size: 1.1rem !important;
+    letter-spacing: 0.05rem;
+    font-family: CalibreMedium; 
+}

@@ -54,7 +54,7 @@ var headerAnimate = function headerAnimate() {
     delay: 1.6,
     opacity: 1,
     ease: Sine.easeIn
-  }, "0").fromTo('.fab', {
+  }, "0").fromTo('.main--icon', {
     opacity: 0
   }, {
     opacity: 1,
