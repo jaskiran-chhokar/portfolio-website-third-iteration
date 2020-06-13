@@ -20,7 +20,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: CalibreBold;  
+    font-family: CalibreBold;
 }
 
 .main-button {
@@ -246,6 +246,7 @@ p {
     z-index: 10;
 }
 
+/* about me */
 .about-me {
     background-color: white;   
     border-top: 12px solid rgba(208,168,179,1);
