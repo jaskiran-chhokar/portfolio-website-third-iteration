@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-weight--bold {
     font-family: 'CalibreBold';
-    border-bottom: 2px solid rgb(208,168,179);
 }
 
 .image-fluid {
@@ -259,9 +258,27 @@ p {
 }
 
 .about-me .about-me--para {
-    margin-top: 0; 
-    margin-bottom: 2rem;
+    padding-bottom: 1rem;
     line-height: 1.5;
+    margin: 0;
+}
+
+.about-me .about-me--para-two {
+    margin-bottom: 1rem !important;
+}
+
+.about-me .about-me--button{
+    text-decoration: none;
+    font-family: CalibreBold;
+    color: #0c214a;
+    padding: 0.7rem 1rem 0 1rem;
+    font-size: 1.4rem;
+    border-bottom: 3px solid #d0a8b3;
+    background-color: rgba(208,168,179,0.1);
+}
+.about-me .about-me--button i {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .about-me .about-me--skills {
