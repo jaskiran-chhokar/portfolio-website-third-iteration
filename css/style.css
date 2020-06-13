@@ -158,6 +158,11 @@ p {
     max-width: 30%;   
 }
 
+.column-two--lg {
+    flex: 0 0 20%;
+    max-width: 20%;   
+}
+
 .main-heading {
     font-family: CalibreBold;
     font-size: 5.5rem;
@@ -360,7 +365,7 @@ p {
 }
 
 .about-me .container {
-    padding: 8rem 4rem 2rem 4rem;
+    padding: 8rem 4rem 5rem 4rem;
     transform: skewY(2deg);
 }
 
@@ -369,9 +374,18 @@ p {
     background-color: #f7efee;
 }
 
+.my-skills .my-skills--title {
+    padding: 4rem;  
+}
+
 .my-skills--container {
-    margin-top: 2rem;
-    padding: 8rem 4rem;    
+    padding: 8rem 4rem 8rem 4rem;    
+}
+
+.my-skills .my-skills--row{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
 }
 
 /* featured work */ 
