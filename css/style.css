@@ -339,6 +339,11 @@ p {
     padding: 2rem 4rem 10rem 4rem;  
 }
 
+.my-skills h4 {
+    color: #0c214a;
+    font-size: 1.4rem;
+}
+
 .my-skills .my-skills--row{
     width: 100%;
     display: flex; 
@@ -437,7 +442,6 @@ p {
 }
 
 .featured-work .featured-work--img {
-
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
