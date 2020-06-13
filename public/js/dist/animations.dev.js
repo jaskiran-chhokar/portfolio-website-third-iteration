@@ -54,13 +54,18 @@ var headerAnimate = function headerAnimate() {
     delay: 1.6,
     opacity: 1,
     ease: Sine.easeIn
+  }, "0").fromTo('.main--icons a', {
+    opacity: 0
+  }, {
+    opacity: 1,
+    delay: 1.8
   }, "0").fromTo('.main--icon', {
     opacity: 0
   }, {
     opacity: 1,
     duration: 0.7,
-    stagger: .2,
-    delay: 1.8
+    stagger: .3,
+    delay: 2
   }, "0").fromTo('.main--verticle-line', {
     opacity: 0
   }, {

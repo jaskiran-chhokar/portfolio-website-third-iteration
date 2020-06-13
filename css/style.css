@@ -53,6 +53,11 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
 }
 
+.font-weight--bold {
+    font-family: 'CalibreBold';
+    border-bottom: 2px solid rgb(208,168,179);
+}
+
 .image-fluid {
     width: 100%;
     height: auto;
@@ -203,9 +208,18 @@ p {
     flex-wrap: wrap; 
 }
 
-.main-header .main--icons i {
+.main-header .main--icon {
     padding-bottom: 2.5rem;
     color: #0c214a;
+    transition: 0.3s ease-in-out;
+}
+
+.main-header .main--icons a {
+    opacity: 0;
+}
+
+.main-header .main--icon:hover {
+    transform: scale(1.12);
 }
 
 .main-header .main--verticle-line {
@@ -247,6 +261,7 @@ p {
 .about-me .about-me--para {
     margin-top: 0; 
     margin-bottom: 2rem;
+    line-height: 1.5;
 }
 
 .about-me .about-me--skills {
@@ -332,6 +347,17 @@ p {
     transform: skewY(2deg);
 }
 
+/* my skills */ 
+.my-skills {
+    background-color: #f7efee;
+}
+
+.my-skills--container {
+    margin-top: 2rem;
+    padding: 8rem 4rem;    
+}
+
+/* featured work */ 
 .featured-work {
     background-color: white;
     position: relative;
@@ -548,8 +574,6 @@ p {
 }
 
 .more-projects .more-projects--techologies {
-    /* padding-top: 1.5rem; 
-    border-top: 1px solid rgba(208,168,179,0.6); */
     font-size: 1.1rem !important;
     letter-spacing: 0.05rem;
     font-family: CalibreMedium; 
