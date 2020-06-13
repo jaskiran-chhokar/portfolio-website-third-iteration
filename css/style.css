@@ -286,46 +286,6 @@ p {
     font-size: 1.1rem;
 }
 
-.about-me .about-me--skills {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.about-me .about-me--skills div {
-    font-family: CalibreBold;
-    color: #0c214a;
-    padding: 0.5rem 1rem 0.1rem;
-    margin-right: 0.6rem;
-    margin-bottom: 1rem;
-    border: 2px solid #0c214a;
-    border-radius: 5px;
-}
-
-.about-me .about-me--skill {
-    background-color: transparent;
-    transition: .2s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.about-me .about-me--skill:after {
-    content: ''; 
-    position: absolute;
-    z-index: -1;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background-color: rgba(208,168,179,0.3);
-    transition: .35s ease-in;
-    transform-origin: left;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: left;
-    transform-origin: left;
-    opacity: 0;
-}
-
 .about-me .about-me--skill:hover:after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
@@ -365,21 +325,24 @@ p {
 }
 
 .about-me .container {
-    padding: 8rem 4rem 5rem 4rem;
+    padding: 8rem 4rem 7rem 4rem;
     transform: skewY(2deg);
 }
 
 /* my skills */ 
 .my-skills {
     background-color: #f7efee;
+    transform: skewY(2deg);
 }
 
 .my-skills .my-skills--title {
-    padding: 4rem;  
+    transform: skewY(-2deg);
+    padding: 4rem 4rem 0 4rem;  
 }
 
-.my-skills--container {
-    padding: 8rem 4rem 8rem 4rem;    
+.my-skills .my-skills--container {
+    transform: skewY(-2deg);
+    padding: 8rem 4rem 10rem 4rem;  
 }
 
 .my-skills .my-skills--row{
@@ -388,8 +351,50 @@ p {
     justify-content: center;
 }
 
+.about-me .about-me--skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-skills .about-me--skills {
+    font-family: CalibreBold;
+    color: #0c214a;
+    padding: 0.5rem 1.1rem 0.1rem;
+    margin-right: 0.6rem;
+    margin-bottom: 1rem;
+    border: 2px solid #0c214a;
+    border-radius: 5px;
+    display: inline-block; 
+}
+
+.my-skills .about-me--skill {
+    background-color: transparent;
+    transition: .2s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.my-skills .about-me--skill:after {
+    content: ''; 
+    position: absolute;
+    z-index: -1;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(208,168,179,0.3);
+    transition: .35s ease-in;
+    transform-origin: left;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 0;
+}
+
 /* featured work */ 
 .featured-work {
+    border-top: 10px solid #d0a8b3;
     background-color: white;
     position: relative;
     top: -50px;
