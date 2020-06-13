@@ -286,13 +286,6 @@ p {
     font-size: 1.1rem;
 }
 
-.about-me .about-me--skill:hover:after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    opacity: 1;
-  }
-  
-
 .about-me .about-me--image {
     border-radius: 2%;
     filter: grayscale(40%);
@@ -342,7 +335,7 @@ p {
 
 .my-skills .my-skills--container {
     transform: skewY(-2deg);
-    padding: 8rem 4rem 10rem 4rem;  
+    padding: 2rem 4rem 10rem 4rem;  
 }
 
 .my-skills .my-skills--row{
@@ -351,9 +344,8 @@ p {
     justify-content: center;
 }
 
-.about-me .about-me--skills {
-    display: flex;
-    flex-wrap: wrap;
+.my-skills .column-two--lg {
+    padding: 1rem;
 }
 
 .my-skills .about-me--skills {
@@ -367,14 +359,14 @@ p {
     display: inline-block; 
 }
 
-.my-skills .about-me--skill {
+.my-skills .about-me--skills {
     background-color: transparent;
     transition: .2s ease;
     position: relative;
     z-index: 1;
 }
 
-.my-skills .about-me--skill:after {
+.my-skills .about-me--skills:after {
     content: ''; 
     position: absolute;
     z-index: -1;
@@ -392,9 +384,15 @@ p {
     opacity: 0;
 }
 
+.my-skills .about-me--skills:hover:after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+
 /* featured work */ 
 .featured-work {
-    border-top: 10px solid #d0a8b3;
+    border-top: 12px solid #d0a8b3;
     background-color: white;
     position: relative;
     top: -50px;
