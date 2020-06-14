@@ -617,3 +617,28 @@ p {
     letter-spacing: 0.05rem;
     font-family: CalibreMedium; 
 }
+/* contact me */ 
+.contact-me {
+    padding: 5rem 4rem 10rem 4rem;
+}
+
+.contact-me .container {
+    justify-content: center;
+    text-align: center; 
+}
+
+.contact-me .secondary-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem; 
+}
+
+.contact-me .contact-me--text {
+    width: 70%; 
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.contact-me i { 
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
