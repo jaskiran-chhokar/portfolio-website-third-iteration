@@ -668,3 +668,26 @@ p {
     font-size: 1rem;
     margin: 0 0.3rem;
 }
+
+/* media queries - tablet */ 
+@media only screen and (max-width: 991px) {
+    .main-header .column-seven--lg {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .main-header .main--line {
+        left: 4%;
+    }
+    .main-header .main-heading {
+        font-size: 4.5rem;
+    }
+    .main-header .main-subheading {
+        font-size: 1.6rem;
+        padding: 0.5rem 0;
+        width: 80%;
+    }
+    .main-header .main--verticle-line, 
+    .main-header .main--verticle-line:after {
+        height: 80px; 
+    }
+}
