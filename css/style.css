@@ -690,4 +690,28 @@ p {
     .main-header .main--verticle-line:after {
         height: 80px; 
     }
+    /* about me */ 
+    .about-me .container {
+        flex-wrap: wrap;
+    }
+    .about-me .column-sixhalf--lg {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-me .column-three--lg {
+        flex: 0 0 35%;
+        max-width: 35%;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        order: -1;
+        display: none;
+    }
+    /* noteworthy projects */ 
+    .more-projects .container {
+        padding: 0 2rem;
+    }
+    .more-projects .more-projects--project {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
 }
