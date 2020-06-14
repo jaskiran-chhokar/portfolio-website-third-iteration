@@ -706,6 +706,31 @@ p {
         order: -1;
         display: none;
     }
+    /* featured projects */ 
+    .featured-work .container {
+        padding: 8rem 2rem 0;
+    }
+    .featured-work .featured-work--project {
+        margin-bottom: 10rem;
+    }
+    .featured-work--project .featured-work--title {
+        font-size: 1.4rem;
+    }
+    .featured-work .featured-work--img {
+        height: 250px;
+    }
+    .featured-work--project .featured-work--info .featured-work--info-box {
+        padding: 2.2rem 2rem;
+    }
+    .featured-work--project .featured-work--info .featured-work--info-box, .featured-work--project .featured-work--info .featured-work--info-boxalt {
+        top: 25%;
+    }
+    .featured-work--project .featured-work--description {
+        font-size: 1rem;
+    }
+    .featured-work--project .featured-work--info .featured-work--tags {
+        font-size: 0.9rem !important;
+    }
     /* noteworthy projects */ 
     .more-projects .container {
         padding: 0 2rem;
