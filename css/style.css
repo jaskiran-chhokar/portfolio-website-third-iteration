@@ -1,7 +1,5 @@
 @font-face {
     font-family: CalibreLight; 
-    /*     src: url('../calibre-font/CalibreMedium.woff');     */ 
-    /* src: url('../calibre-font/CalibreLight.woff');  */
     src: url('../calibre-font/CalibreThin.woff')
 }
 
@@ -619,7 +617,7 @@ p {
 }
 /* contact me */ 
 .contact-me {
-    padding: 5rem 4rem 10rem 4rem;
+    padding: 6rem 4rem 10rem 4rem;
 }
 
 .contact-me .container {
@@ -641,4 +639,26 @@ p {
 .contact-me i { 
     margin-left: 0.5rem;
     font-size: 1rem;
+}
+
+/* copyright */ 
+.copyright {
+    padding: 1rem 4rem;
+    background-color: rgba(208,168,179,0.2);
+}
+
+.copyright .copyright--container {
+    display: flex; 
+    justify-content: center;
+}
+
+.copyright .copyright--container p { 
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+    font-family: CalibreBold;
+}
+
+.copyright i {
+    font-size: 1rem;
+    margin: 0 0.3rem;
 }
