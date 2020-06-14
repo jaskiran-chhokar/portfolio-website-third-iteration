@@ -13,7 +13,6 @@ var headerAnimate = function headerAnimate() {
     width: '100%',
     duration: 1
   }, "-=1").to('.main-header', {
-    height: '82vh',
     duration: 1
   }, "-=1").fromTo('h1', {
     y: 20,
