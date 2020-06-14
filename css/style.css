@@ -703,8 +703,8 @@ p {
         max-width: 35%;
         margin-top: 1rem;
         margin-bottom: 5rem;
+        margin: auto;
         order: -1;
-        display: none;
     }
     /* featured projects */ 
     .featured-work .container {
