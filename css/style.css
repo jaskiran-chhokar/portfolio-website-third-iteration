@@ -584,7 +584,12 @@ p {
     max-width: 25%;
     background-color: #f7efee;
     padding: 2.5rem 2rem 2.5rem 2rem;
+    transition: 0.4s ease-in-out;
     margin: 0.5rem;
+}
+
+.more-projects .more-projects--project:hover {
+    transform: scale(0.95);
 }
 
 .more-projects .more-projects--icons {
@@ -627,11 +632,11 @@ p {
 
 .contact-me .secondary-heading {
     font-size: 3rem;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.3rem; 
 }
 
 .contact-me .contact-me--text {
-    width: 70%; 
+    width: 65%; 
     margin: 0 auto;
     padding-bottom: 3rem;
 }
@@ -645,6 +650,7 @@ p {
 .copyright {
     padding: 1rem 4rem;
     background-color: rgba(208,168,179,0.2);
+    border-top: 5px solid #d0a8b3;
 }
 
 .copyright .copyright--container {
