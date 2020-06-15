@@ -25,7 +25,7 @@ const headerAnimate = () => {
         opacity: 1,
         ease: Sine.easeIn
     },"-=0.1")
-    .fromTo('h2', {
+    .fromTo('.main-heading-two', {
         y:20,
         opacity: 0,
         ease: Sine.easeOut
@@ -106,12 +106,14 @@ let homeController = new ScrollMagic.Controller();
 
 // About Me Section
 let aboutAnimation = gsap.timeline(); 
-aboutAnimation.fromTo('.about-me--skill', {
-    opacity: 0
+aboutAnimation.fromTo('.about-me--animate', {
+    opacity: 0,
+    y: -20
 },{
     opacity: 1,
-    stagger: 1,
-},"3")
+    y: 0,
+    stagger: .3
+},"3");
 
 const aboutElement = document.querySelector('.about-me--container'); 
 
@@ -121,6 +123,27 @@ let aboutScene = new ScrollMagic.Scene({
     duration: aboutElement.offsetHeight
 })
 .setTween(aboutAnimation)
+.addTo(homeController);
+
+// Skills and Tools 
+let skillsAnimation = gsap.timeline(); 
+skillsAnimation.fromTo('.about-me--skills', {
+    opacity: 0,
+    y: -20
+},{
+    opacity: 1,
+    y: 0,
+    stagger: .1
+},"0");
+
+const skillsElement = document.querySelector('.my-skills--row'); 
+
+let skillsScene = new ScrollMagic.Scene({
+    triggerElement: '.my-skills--row',
+    triggerHook: 0.85, 
+    duration: skillsElement.offsetHeight
+})
+.setTween(skillsAnimation)
 .addTo(homeController);
 
 // Featured Projects Section

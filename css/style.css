@@ -794,3 +794,10 @@ p {
         font-size: 0.9rem !important;
     }
 }
+/* media queries for phones */ 
+@media only screen and (max-width: 863px) {
+    .more-projects .more-projects--project {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}
