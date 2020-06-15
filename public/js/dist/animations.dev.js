@@ -134,4 +134,20 @@ featuredProjects.forEach(function (project) {
     triggerHook: 1.5,
     duration: project.offsetHeight
   }).setClassToggle(project, 'visible').addIndicators(project).addTo(homeController);
-});
+}); // Noteworthy Projects Section
+
+var noteworthyProjectsAnimation = gsap.timeline();
+noteworthyProjectsAnimation.fromTo('.more-projects--project', {
+  opacity: 0,
+  y: -50
+}, {
+  opacity: 1,
+  y: 0,
+  stagger: .2
+}, "0");
+var moreProjects = document.querySelector('.more-projects--contain');
+var noteworthyProjects = new ScrollMagic.Scene({
+  triggerElement: '.more-projects--contain',
+  triggerHook: 0.99,
+  duration: moreProjects.offsetHeight
+}).setTween(noteworthyProjectsAnimation).addTo(homeController);

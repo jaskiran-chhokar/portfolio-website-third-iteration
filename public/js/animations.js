@@ -159,3 +159,24 @@ featuredProjects.forEach(project => {
     .addIndicators(project) 
     .addTo(homeController)
 })
+
+// Noteworthy Projects Section
+let noteworthyProjectsAnimation = gsap.timeline(); 
+noteworthyProjectsAnimation.fromTo('.more-projects--project', {
+    opacity: 0,
+    y: -50
+},{
+    opacity: 1,
+    y: 0,
+    stagger: .2
+},"0");
+
+const moreProjects = document.querySelector('.more-projects--contain'); 
+
+let noteworthyProjects = new ScrollMagic.Scene({
+    triggerElement: '.more-projects--contain',
+    triggerHook: 0.99, 
+    duration: moreProjects.offsetHeight
+})
+.setTween(noteworthyProjectsAnimation)
+.addTo(homeController);
