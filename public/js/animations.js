@@ -190,7 +190,7 @@ contactMeAnimation.fromTo('.contact-me--animate', {
     opacity: 1,
     y: 0,
     stagger: .3
-},"1");
+},"3");
 
 const contactMe = document.querySelector('.contact-me .container div'); 
 

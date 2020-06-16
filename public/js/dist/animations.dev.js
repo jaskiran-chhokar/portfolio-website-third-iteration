@@ -160,7 +160,7 @@ contactMeAnimation.fromTo('.contact-me--animate', {
   opacity: 1,
   y: 0,
   stagger: .3
-}, "1");
+}, "3");
 var contactMe = document.querySelector('.contact-me .container div');
 var contactScene = new ScrollMagic.Scene({
   triggerElement: '.contact-me--animate',
