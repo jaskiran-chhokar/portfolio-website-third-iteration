@@ -47,7 +47,7 @@ const headerAnimate = () => {
         opacity: 1,  
         ease: Sine.easeIn
     }, "0")
-    .fromTo('.main-button', {
+    .fromTo('.main-header--btn-animate', {
         y:20,
         opacity: 0,
         ease: Sine.easeOut
@@ -133,7 +133,7 @@ skillsAnimation.fromTo('.about-me--skills', {
 },{
     opacity: 1,
     y: 0,
-    stagger: .1
+    stagger: .3
 },"0");
 
 const skillsElement = document.querySelector('.my-skills--row'); 
@@ -179,4 +179,25 @@ let noteworthyProjects = new ScrollMagic.Scene({
     duration: moreProjects.offsetHeight
 })
 .setTween(noteworthyProjectsAnimation)
+.addTo(homeController);
+
+// Contact Me Animation
+let contactMeAnimation = gsap.timeline(); 
+contactMeAnimation.fromTo('.contact-me--animate', {
+    opacity: 0,
+    y: -20
+},{
+    opacity: 1,
+    y: 0,
+    stagger: .3
+},"1");
+
+const contactMe = document.querySelector('.contact-me .container div'); 
+
+let contactScene = new ScrollMagic.Scene({
+    triggerElement: '.contact-me--animate',
+    triggerHook: 0.85, 
+    duration: contactMe.offsetHeight
+})
+.setTween(contactMeAnimation)
 .addTo(homeController);

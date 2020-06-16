@@ -43,7 +43,7 @@ var headerAnimate = function headerAnimate() {
     delay: 1.4,
     opacity: 1,
     ease: Sine.easeIn
-  }, "0").fromTo('.main-button', {
+  }, "0").fromTo('.main-header--btn-animate', {
     y: 20,
     opacity: 0,
     ease: Sine.easeOut
@@ -117,7 +117,7 @@ skillsAnimation.fromTo('.about-me--skills', {
 }, {
   opacity: 1,
   y: 0,
-  stagger: .1
+  stagger: .3
 }, "0");
 var skillsElement = document.querySelector('.my-skills--row');
 var skillsScene = new ScrollMagic.Scene({
@@ -150,4 +150,20 @@ var noteworthyProjects = new ScrollMagic.Scene({
   triggerElement: '.more-projects--contain',
   triggerHook: 0.99,
   duration: moreProjects.offsetHeight
-}).setTween(noteworthyProjectsAnimation).addTo(homeController);
+}).setTween(noteworthyProjectsAnimation).addTo(homeController); // Contact Me Animation
+
+var contactMeAnimation = gsap.timeline();
+contactMeAnimation.fromTo('.contact-me--animate', {
+  opacity: 0,
+  y: -20
+}, {
+  opacity: 1,
+  y: 0,
+  stagger: .3
+}, "1");
+var contactMe = document.querySelector('.contact-me .container div');
+var contactScene = new ScrollMagic.Scene({
+  triggerElement: '.contact-me--animate',
+  triggerHook: 0.85,
+  duration: contactMe.offsetHeight
+}).setTween(contactMeAnimation).addTo(homeController);
