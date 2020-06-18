@@ -795,9 +795,12 @@ p {
     }
 }
 /* media queries for phones */ 
-@media only screen and (max-width: 863px) {
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
     .more-projects .more-projects--project {
-        flex: 0 0 90%;
-        max-width: 90%;
+        flex: 0 0 90% !important;
+        max-width: 90% !important;
     }
 }
