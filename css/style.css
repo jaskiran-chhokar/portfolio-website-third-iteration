@@ -796,6 +796,7 @@ p {
 }
 /* media queries for phones */ 
 @media only screen and (max-width: 600px) {
+    /* header */ 
     .navbar--container {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -814,6 +815,23 @@ p {
     .main-header .main--icon {
         font-size: 1.1rem;
     }
+    /* about me */ 
+    .about-me .container {
+        padding: 8rem 2rem 7rem 2rem;
+    }
+    .about-me .column-three--lg {
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin-left: 0;
+        margin-bottom: 4rem;
+    }
+    .about-me .about-me--box {
+        padding: 0; 
+    }
+    .secondary-heading, .about-me .about-me--para, .about-me .about-me--button {
+        opacity: 1 !important;
+    }
+    /* noteworthy projects */
     .more-projects .more-projects--project {
         flex: 0 0 90% !important;
         max-width: 90% !important;
