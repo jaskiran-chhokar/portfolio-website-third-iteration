@@ -860,4 +860,12 @@ p {
     .contact-me .contact-me--text {
         width: 100%;
     }
+    /* copyright */ 
+    .copyright {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .copyright .copyright--container p {
+        font-size: 1.1rem;
+    }
 }
