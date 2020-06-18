@@ -831,8 +831,18 @@ p {
     .secondary-heading, .about-me .about-me--para, .about-me .about-me--button {
         opacity: 1 !important;
     }
+    /* skills */ 
+    .my-skills .my-skills--title {
+        padding: 4rem 3rem 0 3rem;
+    }
+    .my-skills .my-skills--container {
+        padding: 0 2rem 10rem 2rem;
+    }
+    .my-skills .my-skills--row {
+        flex-wrap: wrap;
+    }
     /* noteworthy projects */
-    .more-projects .more-projects--project {
+    .more-projects .more-projects--project, .my-skills .column-two--lg {
         flex: 0 0 90% !important;
         max-width: 90% !important;
     }
