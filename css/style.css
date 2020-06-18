@@ -805,7 +805,7 @@ p {
         padding: 2rem 2rem 10rem 2rem;
     }
     .main-header .main-heading {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         line-height: 0.75;
     }
     .main-header .main-subheading {
@@ -828,7 +828,7 @@ p {
     .about-me .about-me--box {
         padding: 0; 
     }
-    .secondary-heading, .about-me .about-me--para, .about-me .about-me--button {
+    .secondary-heading, .about-me .about-me--para, .about-me .about-me--button, .contact-me--text, .contact-me--animate {
         opacity: 1 !important;
     }
     /* skills */ 
@@ -845,5 +845,19 @@ p {
     .more-projects .more-projects--project, .my-skills .column-two--lg {
         flex: 0 0 90% !important;
         max-width: 90% !important;
+    }
+    /* contact me */ 
+    .contact-me {
+        padding: 4rem 2rem 8rem 2rem;
+    }
+    .contact-me .secondary-heading {
+        font-size: 2.5rem;
+    }
+    .secondary-heading:after {
+        left: 0;
+        top: -10%;
+    }
+    .contact-me .contact-me--text {
+        width: 100%;
     }
 }
