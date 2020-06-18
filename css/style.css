@@ -796,6 +796,24 @@ p {
 }
 /* media queries for phones */ 
 @media only screen and (max-width: 600px) {
+    .navbar--container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .main-header .container {
+        padding: 2rem 2rem 10rem 2rem;
+    }
+    .main-header .main-heading {
+        font-size: 3.5rem;
+        line-height: 0.75;
+    }
+    .main-header .main-subheading {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+    .main-header .main--icon {
+        font-size: 1.1rem;
+    }
     .more-projects .more-projects--project {
         flex: 0 0 90% !important;
         max-width: 90% !important;
