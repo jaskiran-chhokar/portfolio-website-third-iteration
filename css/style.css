@@ -842,19 +842,28 @@ p {
         flex-wrap: wrap;
     }
     /* featured work */ 
+    .featured-work .featured-work--project {
+        opacity: 1;
+    }
     .featured-work .featured-work--project-one {
-        margin-bottom: 30rem;
+        margin-bottom: 37rem;
     }
     .featured-work .featured-work--project-two {
         margin-bottom: 19.5rem;
     }
     .featured-work .featured-work--project-three {
         margin-bottom: 25rem;
-    }      
+    }    
     .featured-work .featured-work--img {
         flex: 0 0 100%;
         max-width: 100%;
         height: 180px;
+    }
+    .featured-work .featured-work--img-two {
+        top: -165px;
+        left: 25px;
+        position: relative;
+        z-index: 1;
     }
     .featured-work--project .featured-work--info {
         flex: 0 0 80%;
