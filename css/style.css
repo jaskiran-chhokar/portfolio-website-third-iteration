@@ -708,21 +708,27 @@ p {
 }
 
 /* media queries - large desktop */ 
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1200px) {
     .featured-work .featured-work--img {
-        height: 530px;
+        height: 355px;
+    }
+}
+
+@media only screen and (min-width: 1370px) {
+    .featured-work .featured-work--img {
+        height: 400px;
     }
 }
 
 @media only screen and (min-width: 1560px) {
     .featured-work .featured-work--img {
-        height: 500px;
+        height: 450px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1700px) {
     .featured-work .featured-work--img {
-        height: 385px;
+        height: 530px;
     }
 }
 
