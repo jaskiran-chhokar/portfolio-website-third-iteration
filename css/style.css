@@ -707,6 +707,25 @@ p {
     margin: 0 0.3rem;
 }
 
+/* media queries - large desktop */ 
+@media only screen and (min-width: 1700px) {
+    .featured-work .featured-work--img {
+        height: 530px;
+    }
+}
+
+@media only screen and (min-width: 1560px) {
+    .featured-work .featured-work--img {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .featured-work .featured-work--img {
+        height: 385px;
+    }
+}
+
 /* media queries - small laptop */ 
 @media only screen and (max-width: 1199px) {
     .featured-work .featured-work--project {
