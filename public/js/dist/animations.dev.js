@@ -78,7 +78,7 @@ var headerAnimate = function headerAnimate() {
     x: 0,
     duration: 0.5,
     delay: 2.4
-  }, "0").fromTo('.navbar__line', {
+  }, "0").fromTo('.navbar__menu', {
     ease: Power1.easeIn,
     x: 150,
     opacity: 0
