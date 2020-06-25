@@ -9,22 +9,22 @@ html
         meta(name='viewport' content='width=device-width,initial-scale=1.0')
         script(src='https://kit.fontawesome.com/b6a6d306f2.js' crossorigin='anonymous')
     body
-        nav(class='navbar')
+        nav(id="home" class='navbar')
             div(class='navbar--container')
                 div
                     p(class='logo') Jaskiran />
                 div(class='navbar__menu')
                     ul(class="navbar__items")
                         li(class="navbar__item")
-                            a(class="navbar__link active") Home
+                            a(class="navbar__link active" href="#home") Home
                         li(class="navbar__item")
-                            a(class="navbar__link") About Me
+                            a(class="navbar__link" href="#about-me") About Me
                         li(class="navbar__item")
-                            a(class="navbar__link") My Skills
+                            a(class="navbar__link" href="#my-skills") My Skills
                         li(class="navbar__item")
-                            a(class="navbar__link") Projects
+                            a(class="navbar__link" href="#featured-projects") Projects
                         li(class="navbar__item")
-                            a(class="navbar__link") Contact
+                            a(class="navbar__link" href="#contact-me") Contact
                 //- div(class='navbar__line')
                 //-     div(class='navbar--line__one')
                 //-     div(class='navbar--line__two')
@@ -49,7 +49,7 @@ html
                             i(class='main--icon fab fa-codepen fa-lg')
                     div(class='main--verticle-line')
 
-        section(class='about-me')
+        section(id="about-me" class='about-me')
             div(class='about-me--container container')
                 div(class='column-sixhalf--lg')
                     div(class='about-me--box')
@@ -64,7 +64,7 @@ html
                     img(class='about-me--image image-fluid' src="../../public/images/me.jpg")
                     div(class='about-me--image-overlay')
 
-        section(class='my-skills')
+        section(id="my-skills" class='my-skills')
             div(class='my-skills--title')
                 h2(class='secondary-heading') Skills and Tools
             div(class='my-skills--container container')

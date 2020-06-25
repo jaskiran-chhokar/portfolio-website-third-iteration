@@ -121,8 +121,8 @@ a {
 }
 
 .navbar__items .active {
-    font-family: CalibreMedium; 
     position: relative;
+    font-family: CalibreLight; 
 }
 
 .navbar__items .active:before {
