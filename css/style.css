@@ -633,6 +633,16 @@ p {
     background-image: url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
 
+.featured-work--icons-one {
+    margin-left: auto;
+ }
+
+.featured-work--icon {
+    color: #0c214a;
+    font-size: 1.5rem;
+    margin-left: 0.8rem;
+}
+
 /* noteworthy proejcts */ 
 .more-projects .container {
     padding: 0 5rem;
