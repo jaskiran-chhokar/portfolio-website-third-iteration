@@ -177,7 +177,8 @@ const moreProjects = document.querySelector('.more-projects--contain');
 let noteworthyProjects = new ScrollMagic.Scene({
     triggerElement: '.more-projects--contain',
     triggerHook: 0.99,
-    duration: moreProjects.offsetHeight
+    duration: moreProjects.offsetHeight,
+    reverse: false
 })
     .setTween(noteworthyProjectsAnimation)
     .addTo(homeController);
@@ -198,7 +199,8 @@ const contactMe = document.querySelector('.contact-me .container div');
 let contactScene = new ScrollMagic.Scene({
     triggerElement: '.contact-me--animate',
     triggerHook: 0.85,
-    duration: contactMe.offsetHeight
+    duration: contactMe.offsetHeight,
+    reverse: false
 })
     .setTween(contactMeAnimation)
     .addTo(homeController);
