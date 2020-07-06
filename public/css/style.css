@@ -609,11 +609,11 @@ p {
 }
 
 .featured-work .featured-work--img-one {
-    background-image: url(../public/images/ramanillusions.png);
+    background-image: url(../images/ramanillusions.png);
 }
 
 .featured-work .featured-work--img-two {
-    background-image: url(../public/images/ecommerce-theme.png);
+    background-image: url(../images/ecommerce-theme.png);
     z-index: -1;
 }
 
@@ -626,7 +626,7 @@ p {
 }
 
 .featured-work .featured-work--img-five {
-    background-image: url(../public/images/interactive-form.jpg);
+    background-image: url(../images/interactive-form.jpg);
 }
 
 .featured-work .featured-work--img-six {

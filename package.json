@@ -4,7 +4,9 @@
   "description": "The third iteration for my front-end developer portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel views/index.pug",
+    "build": "parcel build views/index.pug",
+    "devopen": "parcel views/index.pug --open 'google chrome'"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,10 @@
   "dependencies": {
     "gsap": "^3.3.0",
     "pug": "^3.0.0",
-    "scrollmagic": "^2.0.7"
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-plugin-gsap": "^1.0.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
