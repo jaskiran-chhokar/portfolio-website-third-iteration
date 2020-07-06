@@ -157,7 +157,6 @@ featuredProjects.forEach(project => {
         duration: project.offsetHeight
     })
         .setClassToggle(project, 'visible')
-        .addIndicators(project)
         .addTo(homeController)
 })
 
