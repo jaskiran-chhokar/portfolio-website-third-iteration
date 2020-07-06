@@ -15,6 +15,7 @@
   "dependencies": {
     "gsap": "^3.3.0",
     "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6",
     "scrollmagic": "^2.0.7"
   }
 }
