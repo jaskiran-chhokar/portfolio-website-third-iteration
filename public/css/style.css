@@ -757,18 +757,27 @@ p {
 }
 
 @media only screen and (min-width: 1370px) {
+    .main-header .container {
+        padding: 10rem 4rem 12rem;
+    }
     .featured-work .featured-work--img {
         height: 400px;
     }
 }
 
 @media only screen and (min-width: 1560px) {
+    .main-header .container {
+        padding: 12rem 4rem 12rem;
+    } 
     .featured-work .featured-work--img {
         height: 450px;
     }
 }
 
 @media only screen and (min-width: 1700px) {
+    .main-header .container {
+        padding: 12rem 4rem 14rem;
+    } 
     .featured-work .featured-work--img {
         height: 530px;
     }
