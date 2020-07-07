@@ -631,28 +631,16 @@ p {
 }
 
 .featured-work .featured-work--img-one {
-    background-image: url(../images/ramanillusions.png);
+    background-image: url(../images/ramanillusions.jpg);
 }
 
 .featured-work .featured-work--img-two {
-    background-image: url(../images/ecommerce-theme.png);
+    background-image: url(../images/startup-employee-directory.jpg);
     z-index: -1;
 }
 
 .featured-work .featured-work--img-three {
-    background-image: url(https://justintimeselfstorage.com/images/just-in-time-storage-store.jpg);
-}
-
-.featured-work .featured-work--img-four {
-    background-image: url(https://images.pexels.com/photos/1822568/pexels-photo-1822568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-}
-
-.featured-work .featured-work--img-five {
-    background-image: url(../images/interactive-form.jpg);
-}
-
-.featured-work .featured-work--img-six {
-    background-image: url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-image: url(../images/webondemand.jpg);
 }
 
 .featured-work--icons-one {
@@ -779,9 +767,6 @@ p {
 }
 
 @media only screen and (min-width: 1370px) {
-    .main-header .container {
-        padding: 10rem 4rem 12rem;
-    }
     .featured-work .featured-work--img {
         height: 400px;
     }
