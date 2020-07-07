@@ -919,6 +919,9 @@ p {
     .navbar .navbar__line {
         padding-right: 0; 
     }
+    .navbar .navbar__items--mobile {
+        padding-left: 0;
+    }
     /* header */ 
     .main-header .container {
         padding: 7rem 2rem 7rem 2rem;
