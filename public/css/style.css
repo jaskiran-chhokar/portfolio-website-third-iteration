@@ -1,3 +1,8 @@
+:root {
+    --primary-color-dark: #0c214a; 
+    --secondary-color-light: #f7efee;
+    --primary-color: #d0a8b3;
+}
 @font-face {
     font-family: CalibreLight; 
     src: url('../calibre-font/CalibreThin.woff')
@@ -32,8 +37,8 @@ a {
 .main-button {
     text-decoration: none;
     font-family: CalibreBold;
-    color: #0c214a;
-    border: 2px solid #0c214a;
+    color: var(--primary-color-dark);
+    border: 2px solid var(--primary-color-dark);
     padding: 1rem 1.5rem 0.8rem 1.5rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -104,7 +109,7 @@ a {
 }
 
 .navbar {
-    background-color: #f7efee;
+    background-color: var(--secondary-color-light);
 }
 
 .navbar--container {
@@ -142,7 +147,7 @@ a {
 }
 
 .navbar__item .navbar__link { 
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 1.3rem;
 }
 
@@ -155,20 +160,20 @@ a {
 .navbar .navbar--line__one, .navbar--line__three {
     width: 35px; 
     height: 4px;
-    background-color: #0c214a;
+    background-color: var(--primary-color-dark);
     margin-bottom: 0.4rem;
 }
 
 .navbar .navbar--line__two {
     width: 50px; 
     height: 4px;
-    background-color: #0c214a;
+    background-color: var(--primary-color-dark);
     margin-bottom: 0.4rem;
 }
 
 p {
     font-family: CalibreLight;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 1.4rem;
 }
 
@@ -178,7 +183,7 @@ p {
 }
 
 .main-header {
-    background-color: #f7efee;
+    background-color: var(--secondary-color-light);
 }
 
 .main-header .container  {
@@ -235,14 +240,14 @@ p {
     font-family: CalibreBold;
     font-size: 5.5rem;
     font-weight: bolder;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     margin: 1rem 0;
     line-height: 0.6;
 }
 
 .secondary-heading {
     font-family: CalibreBold;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 2.5rem;    
     margin-bottom: 0.5rem;
     position: relative;
@@ -256,12 +261,12 @@ p {
 }
 
 .main-heading-two {
-    color: rgba(208,168,179,0.6);
+    color: rgba(208,168,179,0.8);
 }
 
 .main-subheading {
     font-family: CalibreLight;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 1.8rem;
     margin: 0 0 2.4rem 0;
     padding: 1rem 0;
@@ -282,7 +287,7 @@ p {
 
 .main-header .main--icon {
     padding-bottom: 2.5rem;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     transition: 0.3s ease-in-out;
 }
 
@@ -299,7 +304,7 @@ p {
     z-index: 1;
     height: 120px;
     width: 2px; 
-    background-color: #0c214a;
+    background-color: var(--primary-color-dark);
     margin: 0 auto;
 }
 
@@ -344,10 +349,10 @@ p {
 .about-me .about-me--button{
     text-decoration: none;
     font-family: CalibreBold;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     padding: 0.7rem 1rem 0 1rem;
     font-size: 1.4rem;
-    border-bottom: 3px solid #d0a8b3;
+    border-bottom: 3px solid var(--primary-color);
     background-color: rgba(208,168,179,0.1);
 }
 .about-me .about-me--button i {
@@ -371,7 +376,7 @@ p {
     height: 90%;
     top: -5%;
     right: -5%;
-    border: 2px solid #0c214a;   
+    border: 2px solid var(--primary-color-dark);
 }
 
 .about-me .about-me--image-overlay {
@@ -393,7 +398,7 @@ p {
 
 /* my skills */ 
 .my-skills {
-    background-color: #f7efee;
+    background-color: var(--secondary-color-light);
     transform: skewY(2deg);
 }
 
@@ -408,7 +413,7 @@ p {
 }
 
 .my-skills h4 {
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 1.4rem;
 }
 
@@ -424,11 +429,11 @@ p {
 
 .my-skills .about-me--skills {
     font-family: CalibreBold;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     padding: 0.5rem 1.1rem 0.1rem;
     margin-right: 0.6rem;
     margin-bottom: 1rem;
-    border: 2px solid #0c214a;
+    border: 2px solid var(--primary-color-dark);
     border-radius: 5px;
     display: inline-block; 
 }
@@ -466,7 +471,7 @@ p {
 
 /* featured work */ 
 .featured-work {
-    border-top: 12px solid #d0a8b3;
+    border-top: 12px solid var(--primary-color);
     background-color: white;
     position: relative;
     top: -50px;
@@ -515,12 +520,10 @@ p {
     background-position: center;
     position: relative;
     border-radius: 5px; 
-
     flex: 0 0 52%;
     max-width: 52%; 
     width: 100%; 
     height: 400px; 
-
     filter: grayscale(50%);
     -webkit-filter: grayscale(50%);
 }
@@ -544,7 +547,7 @@ p {
 
 .featured-work--project .featured-work--info .featured-work--info-box {
     padding: 3rem 2.8rem;
-    background-color: #f7efee;
+    background-color: var(--secondary-color-light);
     position: absolute;
     width: 105%;
     top: 35%;
@@ -555,7 +558,7 @@ p {
     content: '';
     width: 100%;
     height: 100%;
-    border: 2px solid #0c214a;
+    border: 2px solid var(--primary-color-dark);
     position: absolute;
     top: -11%;
     right: -4.5%;
@@ -564,7 +567,7 @@ p {
 
 .featured-work--project .featured-work--info .featured-work--info-boxalt {
     padding: 3rem 2.8rem;
-    background-color: #f7efee;
+    background-color: var(--secondary-color-light);
     position: absolute;
     width: 105%;
     top: 35%;
@@ -575,7 +578,7 @@ p {
     content: '';
     width: 100%;
     height: 100%;
-    border: 2px solid #0c214a;
+    border: 2px solid var(--primary-color-dark);
     position: absolute;
     top: -11%;
     right: 3.5%;
@@ -589,15 +592,15 @@ p {
 
 .featured-work--project .featured-work--info .featured-work--tags {
     font-family: CalibreBold;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     padding: 0.5rem 1rem 0.1rem;
     margin-right: 0.6rem;
-    border: 2px solid #0c214a;
+    border: 2px solid var(--primary-color-dark);
     border-radius: 5px;
 }
 
 .featured-work--project .featured-work--title {
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 1.7rem;
     margin: 0rem;
 }
@@ -638,7 +641,7 @@ p {
  }
 
 .featured-work--icon {
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 1.5rem;
     margin-left: 0.8rem;
 }
@@ -662,7 +665,7 @@ p {
 .more-projects .more-projects--project {
     flex: 0 0 25%;
     max-width: 25%;
-    background-color: #f7efee;
+    background-color: var(--secondary-color-light);
     padding: 2.5rem 2rem 2.5rem 2rem;
     transition: 0.4s ease-in-out;
     margin: 0.5rem;
@@ -680,12 +683,12 @@ p {
 
 .more-projects .more-projects--icons i {
     font-size: 1.2rem;
-    color: #0c214a;
+    color: var(--primary-color-dark);
     margin-left: 0.5rem;
 }
 
 .more-projects .more-projects--project h4 {
-    color: #0c214a;
+    color: var(--primary-color-dark);
     font-size: 1.4rem;
     margin: 0;
 }
@@ -730,7 +733,7 @@ p {
 .copyright {
     padding: 1rem 4rem;
     background-color: rgba(208,168,179,0.2);
-    border-top: 5px solid #d0a8b3;
+    border-top: 5px solid var(--primary-color);
 }
 
 .copyright .copyright--container {
