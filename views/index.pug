@@ -9,7 +9,7 @@ html
         meta(name='viewport' content='width=device-width,initial-scale=1.0')
         script(src='https://kit.fontawesome.com/b6a6d306f2.js' crossorigin='anonymous')
     body
-        nav(id="home" class='navbar')
+        nav(class='navbar')
             div(class='navbar--container')
                 div
                     p(class='logo') Jaskiran />
@@ -25,12 +25,24 @@ html
                             a(class="navbar__link" href="#featured-projects") Projects
                         li(class="navbar__item")
                             a(class="navbar__link" href="#contact-me") Contact
-                //- div(class='navbar__line')
-                //-     div(class='navbar--line__one')
-                //-     div(class='navbar--line__two')
-                //-     div(class='navbar--line__three')
+                div(class='navbar__line')
+                    div(class='navbar--line__one')
+                    div(class='navbar--line__two')
+                    div(class='navbar--line__three')
+            div(class='navbar__mobile')
+                ul(class='navbar__items--mobile')
+                    li(class='navbar__item--mobile')
+                        a(class='navbar__link--mobile' href="#home") Home
+                    li(class='navbar__item--mobile')
+                        a(class='navbar__link--mobile' href="#about-me") About Me
+                    li(class='navbar__item--mobile')
+                        a(class='navbar__link--mobile' href="#my-skills") My Skills
+                    li(class='navbar__item--mobile')
+                        a(class='navbar__link--mobile' href="#featured-projects") Projects
+                    li(class='navbar__item--mobile')
+                        a(class='navbar__link--mobile' href="#contact-me") Contact                      
 
-        header(class='main-header')
+        header(id="home" class='main-header')
             div(class='container')
                 div(class='column-seven--lg')
                     h1(class='main-heading') Jaskiran Chhokar.
@@ -139,7 +151,6 @@ html
                                         div(class='featured-work--tags') HTML
                                         div(class='featured-work--tags') CSS
                                         div(class='featured-work--tags') JavaScript
-                                        div(class='featured-work--tags') React
                                         div(class="featured-work--icons featured-work--icons-one")
                                             a(href="#github-repo" class="featured-work--icon")
                                                 i(class="fab fa-github")
@@ -246,6 +257,7 @@ html
             div(class='copyright--container')
                 p  © Copyright 2020, made with #[i(class='far fa-heart')] by Jaskiran Chhokar
 
+    script(src='../public/js/navbar.js')
     script(src='../node_modules/gsap/dist/gsap.min.js')
     script(src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js")
     script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js')

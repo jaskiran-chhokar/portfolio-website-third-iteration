@@ -3,6 +3,7 @@
     --secondary-color-light: #f7efee;
     --primary-color: #d0a8b3;
 }
+
 @font-face {
     font-family: CalibreLight; 
     src: url('../calibre-font/CalibreThin.woff')
@@ -112,25 +113,25 @@ a {
     background-color: var(--secondary-color-light);
 }
 
-.navbar--container {
+.navbar .navbar--container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.8rem 4rem;
 }
 
-.navbar__items {
+.navbar .navbar__items {
     display: flex; 
     list-style-type: none;
     font-family: CalibreLight; 
 }
 
-.navbar__items .active {
+.navbar .navbar__items .active {
     position: relative;
     font-family: CalibreLight; 
 }
 
-.navbar__items .active:before {
+.navbar .navbar__items .active:before {
     content: '';
     width: 100%;
     height: 80%;
@@ -142,19 +143,37 @@ a {
     border-radius: 1px; 
 }
 
-.navbar__items .navbar__item {
+.navbar .navbar__items .navbar__item {
     margin: 0 2rem;
 }
 
-.navbar__item .navbar__link { 
+.navbar .navbar__item .navbar__link { 
     color: var(--primary-color-dark);
     font-size: 1.3rem;
 }
 
-.navbar__line {
+.navbar .navbar__line {
     padding: 1.5rem 1.2rem;
-    border-radius: 50%;
-    background-color: white;
+    display: none;
+}
+
+.navbar .navbar__mobile {
+    display: none;
+    padding: 0 1.5rem 2rem;
+}
+
+.navbar .navbar__items--mobile {
+    list-style-type: none;
+}
+
+.navbar .navbar__item--mobile {
+    margin-bottom: 0.8rem;
+}
+
+.navbar .navbar__link--mobile {
+    font-family: CalibreMedium;
+    color: var(--primary-color-dark);
+    font-size: 1.1rem;
 }
 
 .navbar .navbar--line__one, .navbar--line__three {
@@ -797,9 +816,23 @@ p {
 }
 
 @media only screen and (max-width: 1110px) {
+    /* featured projects */
     .featured-work .featured-work--img {
         height: 280px;
-    }   
+    }
+    .featured-work--project .featured-work--info .featured-work--info-box div, .featured-work--project .featured-work--info .featured-work--info-boxalt div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .featured-work--project .featured-work--info .featured-work--tags {
+        margin-bottom: 0.8rem;
+    }
+    .featured-work--project .featured-work--icons-one {
+        margin-left: 0;
+    }
+    .featured-work .featured-work--project-one {
+        margin-bottom: 13rem;
+    }
     /* noteworthy projects */ 
     .more-projects .container {
         padding: 0 2rem;
@@ -812,6 +845,25 @@ p {
 
 /* media queries - tablet */ 
 @media only screen and (max-width: 991px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    .navbar .navbar--container {
+        padding: 0rem 4rem;
+    }
+    .navbar .navbar__menu {
+        display: none;
+    }
+    .navbar .navbar__line {
+        display: block;
+        cursor: pointer;
+    }
+    /* promo */
+    .main-header .container {
+        padding: 10rem 4rem 12rem 4rem;
+    }
     .main-header .column-seven--lg {
         flex: 0 0 90%;
         max-width: 90%;
@@ -867,7 +919,7 @@ p {
         top: 25%;
     }
     .featured-work--project .featured-work--description {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .featured-work--project .featured-work--info .featured-work--tags {
         font-size: 0.9rem !important;
@@ -958,10 +1010,6 @@ p {
     }
     .featured-work--project .featured-work--description {
         margin-bottom: 1.3rem;
-    }
-    .featured-work--project .featured-work--info .featured-work--info-box div, .featured-work--project .featured-work--info .featured-work--info-boxalt div {
-        display: flex;
-        flex-wrap: wrap;
     }
     .featured-work--project .featured-work--info .featured-work--tags {
         margin-bottom: 1rem;
