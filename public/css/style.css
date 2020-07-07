@@ -921,7 +921,7 @@ p {
     }
     /* header */ 
     .main-header .container {
-        padding: 6rem 2rem 6rem 2rem;
+        padding: 7rem 2rem 7rem 2rem;
     }
     .main-header .main-heading {
         font-size: 2rem;
@@ -965,10 +965,10 @@ p {
         opacity: 1;
     }
     .featured-work .featured-work--project-one {
-        margin-bottom: 37rem;
+        margin-bottom: 40rem;
     }
     .featured-work .featured-work--project-two {
-        margin-bottom: 19.5rem;
+        margin-bottom: 21rem;
     }
     .featured-work .featured-work--project-three {
         margin-bottom: 25rem;
@@ -1003,6 +1003,9 @@ p {
         margin-bottom: 1rem;
     }
     /* noteworthy projects */
+    .more-projects {
+        padding-top: 5rem;
+    }
     .more-projects .more-projects--project, .my-skills .column-two--lg {
         flex: 0 0 90% !important;
         max-width: 90% !important;
