@@ -1009,6 +1009,7 @@ p {
     .more-projects .more-projects--project, .my-skills .column-two--lg {
         flex: 0 0 90% !important;
         max-width: 90% !important;
+        opacity: 1 !important; 
     }
     /* contact me */ 
     .contact-me {
