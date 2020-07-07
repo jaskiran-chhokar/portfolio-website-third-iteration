@@ -177,10 +177,7 @@ a {
 }
 
 .navbar .navbar--line__one, .navbar--line__three {
-    width: 35px; 
-    height: 4px;
-    background-color: var(--primary-color-dark);
-    margin-bottom: 0.4rem;
+
 }
 
 .navbar .navbar--line__two {
@@ -188,6 +185,27 @@ a {
     height: 4px;
     background-color: var(--primary-color-dark);
     margin-bottom: 0.4rem;
+    position: relative; 
+}
+
+.navbar .navbar--line__two:before {
+    content: ''; 
+    width: 35px; 
+    height: 4px;
+    background-color: var(--primary-color-dark);
+    margin-bottom: 0.4rem;
+    position: absolute;
+    top: -10px; 
+}
+
+.navbar .navbar--line__two:after {
+    content: ''; 
+    width: 35px; 
+    height: 4px;
+    background-color: var(--primary-color-dark);
+    margin-bottom: 0.4rem;
+    position: absolute;
+    top: 10px;     
 }
 
 p {
