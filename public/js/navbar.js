@@ -10,7 +10,4 @@ navbar.addEventListener('click', e => {
     } else {
         navbarMobile.style.display = 'none';
     }
-
-
-    console.log("logged");
 }); 
